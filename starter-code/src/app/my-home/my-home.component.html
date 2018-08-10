@@ -1,6 +1,12 @@
-<p>
-  my-home works!
-</p>
-<div *ngFor="let movie of movies">
-  {{movie}}
+
+<div class="movies">
+  <div class="movie" *ngFor="let movie of movies">
+    <!-- Why does this not work?? -->
+    <!-- <a [routerLink]="['movie', movie.id]"> -->
+      <h3>Room {{movie.room}}</h3>
+      <img [src]="movie.poster">
+      <h5>{{movie.title}}</h5>
+    <!-- </a> -->
+    <input type="button" value="View Details" (click)="viewDetails(movie.id)">
+  </div>
 </div>

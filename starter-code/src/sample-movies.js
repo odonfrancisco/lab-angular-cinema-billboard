@@ -16,7 +16,13 @@ const moviesArray = [
         "William Sadler",
         "Clancy Brown",
         "Gil Bellows"
-      ]
+      ],
+      hours: [
+        'Monday 13:54, 19:32',
+        'Tuesday 12:43, 18:22',
+        'Thursday 14:56, 16:59'
+      ],
+      room: 2
     }, {
       id: 2,
       title: "The Godfather",
@@ -34,7 +40,13 @@ const moviesArray = [
         "Richard S. Castellano",
         "Robert Duvall",
         "Sterling Hayden"
-      ]
+      ],
+      hours: [
+        'Wednesday 09:31, 21:48',
+        'Thursday 11:11, 14:52',
+        'Friday 14:22, 22:43'
+      ],
+      room: 1
     }, {
       id: 3,
       title: "The Godfather Part II",
@@ -52,7 +64,13 @@ const moviesArray = [
         "Robert De Niro",
         "John Cazale",
         "Talia Shire"
-      ]
+      ],
+      hours: [
+        'Sunday 12:43, 23:43',
+        'Tuesday 15:23, 19:39',
+        'Thursday 16:24, 18:34'
+      ],
+      room: 5
     }, {
       id: 4,
       title: "The Dark Knight",
@@ -70,7 +88,13 @@ const moviesArray = [
         "Michael Caine",
         "Maggie Gyllenhaal",
         "Gary Oldman"
-      ]
+      ],
+      hours: [
+        'Thursday 16:24, 20:12',
+        'Saturday 18:53, 21:53',
+        'Sunday 10:34, 23:55'
+      ],
+      room: 3
     }, {
       id: 5,
       title: "Schindler's List",
@@ -88,7 +112,13 @@ const moviesArray = [
         "Caroline Goodall",
         "Jonathan Sagall",
         "Embeth Davidtz"
-      ]
+      ],
+      hours: [
+        'Wednesday 19:30, 22:30',
+        'Thursday 15:45, 18:33',
+        'Saturday 13:32, 16:49'
+      ],
+      room: 4
     }
 ]
 

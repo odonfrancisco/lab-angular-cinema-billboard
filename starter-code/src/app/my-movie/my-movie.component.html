@@ -1,3 +1,78 @@
-<p>
-  my-movie works!
-</p>
+<h1>Cinema</h1>
+
+<div class="header">
+  <h3>Room {{movie.room}}</h3>
+  <h2>{{movie.title}}</h2>
+</div>
+
+<div class="content">
+  <div class="left-column">
+    <img [src]="movie.poster">
+  </div>
+  <div class="right-column">
+    <div class="right-mid-column">
+      <div class="column-1">
+        <strong>Genres</strong>
+      </div>
+      <div class="column-2">
+        <div *ngFor="let genre of movie.genres">
+          {{genre}}
+        </div>
+      </div>
+    </div>
+
+    <div class="right-mid-column">
+      <div class="column-1">
+        <strong>Year</strong>
+      </div>
+      <div class="column-2">
+        {{movie.year}}
+      </div>
+    </div>
+    
+    <div class="right-mid-column">
+      <div class="column-1">
+        <strong>Director</strong>
+      </div>
+      <div class="column-2">
+        {{movie.director}}
+      </div>
+    </div>
+
+    <div class="right-mid-column">
+      <div class="column-1">
+        <strong>Actors</strong>
+      </div>
+      <div class="column-2">
+        <div *ngFor="let actor of movie.actors">
+          {{actor}}
+        </div>
+      </div>
+    </div>
+
+    <div class="right-mid-column">
+      <div class="column-1">
+        <strong>Schedule</strong>
+      </div>
+      <div class="column-2">
+        <div *ngFor="let hour of movie.hours">
+          {{hour}}
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div>
+        <strong>Schedule</strong>
+      </div>
+      <div class="synopsis">
+        {{movie.synopsis}}
+      </div>
+    </div>
+
+    <div class="content">
+        <input class="home-button" type="button" value="Home" (click)="redirect('home')">
+    </div>
+  </div>
+</div>
+
